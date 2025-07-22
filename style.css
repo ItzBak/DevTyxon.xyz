@@ -1,43 +1,71 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a2a44;
+    background: url('path/to/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
+    backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
 }
+
 .header {
     padding: 20px;
+    background: rgba(26, 42, 68, 0.7);
 }
+
 .header h1 {
     color: #00aaff;
     margin: 0;
 }
+
 .header p {
     margin: 10px 0;
 }
+
 .services {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    background: rgba(26, 42, 68, 0.7);
 }
+
 .service {
-    background-color: #2a4066;
+    background: rgba(42, 64, 102, 0.8);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 200px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
+
 .service img {
     width: 50px;
     height: 50px;
+    filter: invert(1); /* Inverts icon color to match the design */
 }
+
+.service h3 {
+    margin: 10px 0;
+    color: #00aaff;
+}
+
+.service p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+}
+
 .contact {
-    background-color: #2a4066;
+    background: rgba(42, 64, 102, 0.8);
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+    backdrop-filter: blur(10px);
 }
+
 .contact button {
     background-color: #00aaff;
     border: none;
@@ -47,8 +75,9 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
 .footer {
-    background-color: #1a2a44;
+    background: rgba(26, 42, 68, 0.7);
     padding: 10px;
     position: fixed;
     width: 100%;
